@@ -1,0 +1,194 @@
+/*Start global*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+	color: #eee;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	background: url("images/sitebg.jpg") no-repeat center fixed;
+	background-size: cover;
+}
+
+a{
+	text-decoration: none;
+	color: #eee;
+}
+
+p{
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+
+img {
+	width: 100%;
+}
+/*End global*/
+
+/*Start reusable*/
+/*End reusable*/
+
+/*Start header*/
+header {
+	width: 100%;
+	height: 100vh;
+}
+
+.maintext {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+}
+
+.maintext h1{
+	font-size: 20rem;
+	font-family: 'historiademo', sans-serif;
+	background: linear-gradient(to top, #ffe838, #fd57bf );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding: 1rem;
+	user-select: none;
+}
+
+.maintext h6{
+	font-family: Arial;
+	font-size: 1.7rem;
+	font-weight: 300;
+	position: fixed;
+	top: 64%;
+	left: 55%;
+	color: #666;
+	font-family: Arial,sans-serif;
+	user-select: none;
+	font-weight: 550;
+}
+
+.btn-inicial{
+	text-transform: uppercase;
+	border: 1px solid #fff;
+	padding: 1rem 5rem;
+	font-size: 1.5rem;
+	transition: all 2s;
+	font-family: Arial;
+	user-select: none;
+	font-weight: bolder;
+}
+
+.btn-inicial:hover {
+	background-color: #80AAA3AD;
+}
+
+/*End header*/
+
+/*Start about*/
+/*End about*/
+
+/*Start services*/
+/*End services*/
+
+/*Start portfolio*/
+/*End services*/
+
+/*Start timeline*/
+/*End timeline*/
+
+/*Start contact*/
+/*End contact*/
+
+/*Start footer*/
+/*End footer*/
+
+/*Start animations*/
+.Fading {
+animation: Fading 10s infinite
+}
+@keyframes Fading {
+0% {
+opacity: 0
+}
+50% {
+opacity: 1
+}
+100% {
+opacity: 0
+}
+}
+
+#gradient {
+width: 100%;
+height: 5px;
+color: #fff;
+background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+background-size: 250% 250%;
+-webkit-animation: Gradient 13s ease infinite;
+-moz-animation: Gradient 13s ease infinite;
+animation: Gradient 13s ease infinite;
+}
+@-webkit-keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+@-moz-keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+@keyframes Gradient {
+0% {
+background-position: 0% 50%
+}
+50% {
+background-position: 100% 50%
+}
+100% {
+background-position: 0% 50%
+}
+}
+/*End animations*/
+
+/*Start media queries*/
+@font-face{
+    src:url("font/TheHistoriaDemo.ttf");
+    font-family:"historiademo";
+}
+
+
+@media screen and (max-width: 768px){
+	body{
+		background: url("images/sitebg2.jpg") no-repeat center fixed;
+		background-size: cover;
+	}
+	.maintext h1{
+		font-size: 13rem;
+	}
+	.maintext h6{
+		font-size: 1.5rem;
+	}
+
+}
+/*End media queries*/
