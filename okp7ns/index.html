@@ -1,58 +1,36 @@
 <!DOCTYPE html>
-<html lang = 'en'>
-	<head>
-		<meta charset = 'UTF-8'>
-		<link rel = 'shortcut icon' type = 'image/png' href = 'logo.ico' />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.19/css/uikit.min.css">
-		<link rel = 'stylesheet' href = 'enigeral.css'>
-		<title>FASE 3</title>
-	</head>
-	<body bgcolor="#1B1B1D">
-		<center>
-		<br>
-		<h1 style="color: #ffffff">FASE 3</h1>
-		<h8>Responda sempre apenas com letras minúsculas e sem acentos.</h8>
-		<br>
-		<br>
-		<img height="320" src="fase02.jpg" width="553">
-		<br>
-		<br>
-		<h8>Rkäänteinen</h8>
-		<p><button class="dica" onclick="functionClue()"><strong>Dica</strong></button></p>
-		<p><button class="responder" onclick="myFunction()"><strong>Responder</strong></button></p>
-		<br>
-		<br>
-		<script>
-		function myFunction() {
-		var txt;
-		var person = prompt("Digite a resposta:", "");
-		if (person == null || person == "") {
-		window.alert("Este campo não pode ficar em branco! Digite a resposta");
-		end;
-		}
-		else
-		if (person == "181,3"){
-		window.location = "http://tijolinho.tk/18i9ju2d";
-		end;
-		}
-		else {
-		window.alert("Resposta Errada!");
-		end;
-		}
-		document.getElementById("demo").innerHTML = txt;
-		}
-		</script>
-		<script>
-		var i = 0;
-		var txt = 'PIPIPIPOPOPO';
-		var speed = 50;
-		function functionClue() {
-		if (i < txt.length) {
-		window.alert("km²");
-		end;
-		}
-		document.getElementById("demo").innerHTML = txt;
-		}
-		</script>
-		<footer id ='footer'><a style = 'text-decoration:none;color:white' href="https:\\www.tijolinho.tk"><img height = '10' width = '10' src = 'logo.png'/> Tijolinho - "O Enigma"</a></footer>
-	</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>T i j o l i n h o</title>
+    <link rel ='shortcut icon' type ='image/png' href ='images/logo.ico'/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css" type="text/css" media="all">
+</head>
+<body>
+    <div class= 'scroll'>
+	<header>
+    <div id='gradient'></div>
+	<div class="maintext">
+	<h1>Fase tres</h1>
+	<h6>Responda sempre apenas com letras minúsculas e sem acentos.</h6>
+	</div>
+    </header>
+    <center>
+    <img id="imgprincipal" src="fase.jpg">
+    <div class="tips">
+    <h6>Sobre a imagem: Rkäänteinen</h6>
+    <h6>Dica sobre a fase: ≈ km²</h6>
+    </div>
+    <form>
+    <div class="form">
+    <input id="resposta" value="Digite aqui a resposta">
+    <button id="btngo" type="button" onclick="getInfo()">OK</button>
+    </form>
+    </center>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
